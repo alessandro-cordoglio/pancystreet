@@ -42,4 +42,28 @@ header{
     padding-right: 32px;
     border-right: 2px solid black;
   }
-  
+
+  /* hamburger menù */
+  .ham{
+    display: none;
+  }
+
+  /* media query */
+  @media screen and (max-width: 800px){
+    .ham_menu{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 50px;
+        padding-left:50px;
+    }
+    .ham{
+        display: block;
+        font-size: 30px;
+    }
+    .ms_nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+    }
+  }
+
