@@ -25,50 +25,58 @@
 </head>
 <body>
     <header>
-        <div class="header_container ms_wrapped d-flex justify-content-between align-items-center ">
-            <div class="header_left">
-                <p class="fw-bold mb-0">Via Delle Viole Perugia</p>
-            </div>
-            <div class="header_middle">
-            </div>
-            <div class="header_right ">
-                <div class="ham_menu">
-                    <div onclick="toggleHam()" class="ham">
-                        <i class="fa-solid fa-bars"></i>
+            <div class="header_container ms_wrapped d-flex justify-content-between align-items-center ">
+                <div class="header_left">
+                    <p class="fw-bold mb-0">Via Delle Viole Perugia</p>
+                </div>
+                <div class="header_middle">
+                </div>
+                <div class="header_right ">
+                    <div class="ham_menu">
+                        <div onclick="toggleHam()" class="ham">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul class="ms_nav fw-bold active">
+                            <div class="nav_li">
+                                <li class="arrow_nav">FRECCE</li>
+                            </div>
+                            <div class="nav_li">
+                                <li class="nav_element">FREE ART</li>
+                            </div>
+                            <div class="nav_li">
+                                <li class="nav_element">STRUTTURE<li>
+                            </div>
+                        </ul>
                     </div>
-                    <ul class="ms_nav fw-bold display_none">
-                        <div class="nav_li">
-                            <li class="arrow_nav">FRECCE</li>
-                        </div>
-                        <div class="nav_li">
-                            <li class="nav_element">FREE ART</li>
-                        </div>
-                        <div class="nav_li">
-                            <li class="nav_element">STRUTTURE<li>
-                        </div>
-                    </ul>
                 </div>
             </div>
+        </header>
+    
+        <main>
+            <section class="ms_hero">
+                <div class="hero_container">
+                    <div class="absolute video_container">
+                        <video class="video_style" id='video'>
+                            <source src="assets/Composizione_1_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="left_div">
+                    </div>
+                    <div class="middle_div">
+                        <div class="video_button">
+                            <button onclick="startVideo()" class="ms_button">
+                                PRESS FOR START
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right_div">
+                       
+                    </div>
+                     
+                
+                </div>
+            </section>
         </div>
-    </header>
-
-    <main>
-        <section class="ms_hero">
-            <div class="hero_container ">
-                <div class="left_div">
-                </div>
-                <div class="middle_div ">
-                    <div class="video_button">
-                        <button class="ms_button">
-                            PRESS FOR START
-                        </button>
-                    </div>
-                </div>
-                <div class="right_div  ">
-                    prova
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>

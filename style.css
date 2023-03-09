@@ -5,6 +5,9 @@
 .absolute{
     position: absolute;
 }
+.active{
+  display: none;
+}
 
 
 /* TYPOGRAPHY */
@@ -29,7 +32,11 @@ header{
     border-right: 2px solid black;
     height: 100%;
     width: 33%;
-    padding: 15px;
+    padding: 15px 0px 15px 15px ;
+    text-align: right;
+  }
+  .header_left p{
+    margin-right: 100px;
   }
   .header_right{
     border-left: 2px solid black;
@@ -51,7 +58,7 @@ header{
     cursor: pointer;
   }
   .nav_li:nth-child(2){
-    margin: 0px 20px 0 20px;
+    margin: 0px 50px 0 50px;
   }
   .arrow_nav{
     cursor: pointer;
@@ -76,6 +83,11 @@ header{
     }
 
   /* media query */
+  @media screen and (max-width: 1180px) {
+    .nav_li:nth-child(2){
+      margin: 0px 20px 0 20px;
+    }
+  }
   @media screen and (max-width: 996px){
     .ham_menu{
         text-align: right;
@@ -96,6 +108,7 @@ header{
         z-index: 999;
         background-color: white;
         text-align: left;
+        padding: 0;
     }
     .nav_element{
         margin: 0;
@@ -111,7 +124,7 @@ header{
         border: none;
         padding: 10px 40px 10px 10px
     }
-    .display_none{
+    .active{
         display: none;
     }
     .nav_li{
@@ -132,18 +145,25 @@ header{
             padding: 12px;
         }
     }
+  @media screen and (max-width: 892px){
+      .header_left p {
+        text-align: left;
+        margin: 0;
+      }
+  }
 
   /* ____________MAIN___________ */
 
 .right_div {
-    width: 35%;
+    width: 33%;
 }
 .left_div{
-    width: 22%;
+    width: 33%;
 }
 .middle_div{
+    margin: auto;
     padding-top: 100px;
-    width: 57%;
+    width: 37%;
 }
 .video_button {
     font-size: 40px;
@@ -174,4 +194,13 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 100px;
+}
+.video_container{
+  z-index: -999; 
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.video_style{
+  width: 100%;
 }
