@@ -9,4 +9,5 @@
 function toggleHam(){
     var nav= document.querySelector('.ms_nav');
     nav.classList.toggle('display_none');
+    nav.classList.toggle('slide-down');
 }
