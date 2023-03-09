@@ -61,9 +61,38 @@ header{
         font-size: 30px;
     }
     .ms_nav{
-        display: none;
         flex-direction: column;
         position: absolute;
+        justify-content: flex-start;
+        right: 5px; top: 70px;
+        border: 1px solid black;
+        height: fit-content;
+        padding: 0;
+        font-size: 20px;
+    }
+    .nav_element{
+        width: 100%;
+        padding: 10px 40px 10px 10px;
+    }
+    .nav_element:first-child{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .arrow_nav{
+        width: 100%;
+        border: none;
+        padding: 10px 40px 10px 10px
+    }
+    .display_none{
+        display: none;
+    }
+    .nav_li{
+        width: 100%;
+    }
+    .nav_li:hover{
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        background-color: goldenrod;
     }
   }
 

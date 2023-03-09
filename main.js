@@ -1,4 +1,12 @@
-function toggleHamburger(){
-    const nav = document.querySelector('.ms_nav')
-    nav.toggleClass
+/* $(document).ready(function(){
+    
+    $(".ms_nav").click(function(){
+        $(this).removeClass('display_none');
+    });
+});
+ */
+
+function toggleHam(){
+    var nav= document.querySelector('.ms_nav');
+    nav.classList.toggle('display_none');
 }
