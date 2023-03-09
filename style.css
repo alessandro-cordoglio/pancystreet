@@ -1,0 +1,45 @@
+/* TYPOGRAPHY */
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100vw;
+}
+
+/* LAYOUT */
+.ms_wrapped{
+    max-width: 1500px;
+    margin: auto;
+    overflow: auto;
+}
+
+/* HEADER */
+header{
+    border-bottom: 2px solid black;
+  }
+  .header_left{
+    border-right: 2px solid black;
+    height: 100%;
+    padding: 20px 50px 20px 20px
+  }
+  .header_right{
+    border-left: 2px solid black;
+  }
+  
+  /* navbar */
+  .ms_nav{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .nav_element{
+    padding: 0 25px 0 25px;
+  }
+  .arrow_nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 32px;
+    border-right: 2px solid black;
+  }
+  
