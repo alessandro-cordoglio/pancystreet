@@ -13,24 +13,26 @@ body{
     max-width: 100vw;
 }
 
-/* LAYOUT */
-.ms_wrapped{
-    max-width: 1500px;
-    margin: auto;
-    overflow: auto;
-}
 
 /*__________HEADER___________*/
 header{
     border-bottom: 2px solid black;
   }
+  .header_container{
+    padding: 15px;
+    height: 100%;
+  }
+  .header_middle{
+    width: 40%;
+  }
   .header_left{
     border-right: 2px solid black;
     height: 100%;
-    padding: 20px 50px 20px 20px
+    width: 30%
   }
   .header_right{
     border-left: 2px solid black;
+    width: 30%
   }
   
   /* navbar */
@@ -43,14 +45,10 @@ header{
     margin-bottom: 0;
   }
   .nav_element{
-    padding: 0 25px 0 25px;
     cursor: pointer;
   }
   .arrow_nav{
     cursor: pointer;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 32px;
   }
 
   /* hamburger menù */
@@ -74,10 +72,8 @@ header{
   /* media query */
   @media screen and (max-width: 800px){
     .ham_menu{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 50px;
-        padding-left:50px;
+        text-align: right;
+        padding-right: 20px;
     }
     .ham{
         display: block;
@@ -120,13 +116,44 @@ header{
   }
 
   /* ____________MAIN___________ */
+
+.right_div {
+    width: 35%;
+}
 .left_div{
-
+    width: 22%;
 }
-.video_button{
-    border-radius: 100%;
-    width: 50px;
+.middle_div{
+    padding-top: 100px;
+    width: 57%;
 }
-.ms_button{
+.video_button {
+    font-size: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    padding-top: 15px;
+    text-align: center;
+}
 
+.ms_button {
+    color: white;
+    background-color: black;
+    width: 90%;
+    height: 95%;
+    border-radius: 50%;
+    transition: 1s;
+}
+.ms_button:hover{
+    transform: scale(1.1);
+}
+
+.hero_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
 }
