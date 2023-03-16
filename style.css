@@ -154,26 +154,32 @@ header{
 
   /* ____________MAIN___________ */
 
+/* HERO */
+
 .right_div {
-    width: 33%;
-}
-.left_div{
-    width: 33%;
+    width: 25%;
+    display: flex;
 }
 .middle_div{
-    margin: auto;
     padding-top: 100px;
-    width: 37%;
+    width: 75%;
+}
+.middle_down span{
+  text-transform: uppercase;
+}
+.middle_down{
+  padding-top: 40px;
+  margin-left: 25%;
 }
 .video_button {
     font-size: 40px;
-    margin: 0 auto;
     border-radius: 50%;
     width: 300px;
     height: 300px;
     border: 2px solid black;
     padding-top: 15px;
     text-align: center;
+    margin-left: 50%;
 }
 
 .ms_button {
@@ -190,17 +196,47 @@ header{
 
 .hero_container {
     width: 100%;
+    height: 750px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 100px;
+    border-bottom: 2px solid black;
 }
 .video_container{
   z-index: -999; 
-  top: 0;
+  bottom: 30px;
   width: 100%;
   height: 100vh;
 }
 .video_style{
   width: 100%;
+}
+
+/* right div */
+.info_container {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.info_right {
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  left: 60px;
+  top: 70px;
+  font-size: 40px;
+}
+.text_stoke{
+  color: white;
+  background-color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* video_end */
+.video_end{
+  border-bottom: 2px solid black;
+  height: 235px;
 }
