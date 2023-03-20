@@ -17,7 +17,7 @@ body{
 }
 
 
-/*__________HEADER___________*/
+    /*__________HEADER___________*/
 header{
     border-bottom: 2px solid black;
   }
@@ -82,7 +82,7 @@ header{
         }
     }
 
-  /* ____________MAIN___________ */
+    /* ____________MAIN___________ */
 
 /* HERO */
 
@@ -164,8 +164,6 @@ header{
   background-color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
-/* video_end */
 .video_end{
   border-bottom: 2px solid black;
   height: 235px;
@@ -173,6 +171,7 @@ header{
 
 
 /* INTRO SECTION */
+
 .fancy{
   color: #F27506;
 }
@@ -200,9 +199,6 @@ header{
   padding-left: 200px;
   padding-right: 100px;
 }
-
-
-
 .arrow_img_intro img{
   width: 500px;
 }
@@ -233,7 +229,8 @@ header{
   color: #582AC0;
 }
 
-/* opere section */
+/* OPERE SECTION */
+
 .opere_title{
   padding-top: 20px;
   text-align: center;
@@ -275,6 +272,7 @@ header{
 
 .opere_first img{
   width: 500px ;
+  transition: 0.2s;
 }
 .opere_first{
   padding-left: 130px;
@@ -294,10 +292,10 @@ header{
   top: 0; bottom: 0; left: 0; right: 0;
 }
 .button_img_one{
-  left: 120px; top: 100px;
+  left: 140px; top: 100px;
 }
 .button_img_two{
-  left: 300px;
+  left: 310px;
 }
 .button_img_three{
   left: 500px; top: 100px;
@@ -307,17 +305,62 @@ header{
   object-fit: cover;
   width: 900px;
   height: 580px;
+  z-index: 20;
 
 }
 .grifo_img img{
   width: 100%;
   height: 100%;
+  border-bottom: 2px solid black;
 }
 
+/* ARROW SECTION */
 
+.arrow_main_img{
+  width: 100%;
+  height: 1200px;
+  
+}
+.arrow_main_img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.arrow_section_title{
+  background-color: #F2BC1B;
+  padding-top: 200px;
+}
+.arrow_title h2{
+  text-align: center;
+  font-size: 120px;
+  font-weight: bold;
+}
+.arrow_text{
+  padding: 100px 200px 0 200px;
+  font-weight: bold;
+}
 
-
-
+.arrows_wrapper{
+  bottom: 450px; left: 500px;
+}
+.arrow_preview{
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin-left: 40px;
+}
+.arrow_preview:first-child{
+  margin: 0;
+}
+.arrow_preview img{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit:cover ;
+}
+.thumb{
+  border: 15px solid #582AC0 ;
+}
 
 
 /* MEDIA QUERIES */

@@ -5,6 +5,8 @@
     });
 });
  */
+
+
 // Seleziona l'elemento che si desidera osservare
 const target = document.querySelector('.bar');
 
@@ -27,27 +29,29 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(target);
 
 
-
-
-
-
 /* VARIABILI */
 
 const mapImg = document.querySelector(".map_image_container img");
 const mapText = document.querySelector(".map_text");
-const buttonImgFirst = document.querySelector(".button_img_one")
+const mainImg = document.querySelector('.arrow_main_img img');
+const previewImgs = document.querySelectorAll('.arrow_preview img');
+
+let active = 0
+
+
 
 /* FUNZIONI */
-/* funzione al click del primo bottone sull'immagine */
-buttonImgFirst.addEventListener("click", () => {
-    const img = document.querySelector('.opere_first img')
-    const circle = document.querySelectorAll('.circle')
-    img.src = "assets/Senza_titolo-2_Tavola_disegno_1.jpg";
-    circle.forEach(circle => {
-        circle.classList.add('active');
-    });
 
+previewImgs.forEach((previewImg, index) => {
+  previewImg.addEventListener('click', () => {
+    // otteniamo l'URL dell'immagine cliccata
+    const newImgUrl = previewImg.src;
+    // sostituiamo l'immagine principale con quella cliccata
+    mainImg.src = newImgUrl;
   });
+});
+
+
 
 /* funzione on hover x cambiare immagine e far apparire testo */
 mapImg.addEventListener("mouseover", () => {
