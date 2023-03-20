@@ -5,6 +5,31 @@
     });
 });
  */
+// Seleziona l'elemento che si desidera osservare
+const target = document.querySelector('.bar');
+
+// Crea una nuova istanza dell'Intersection Observer
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // Se l'elemento diventato visibile nella viewport, esegui una funzione
+    if (entry.isIntersecting) {
+      const bars= document.querySelectorAll('.bar');
+      console.log(bars);
+      bars.forEach(bars =>{
+          bars.style.height = '400px';
+          bars.style.transform = 'translateY(0)';
+      })
+    }
+  });
+});
+
+// Osserva l'elemento target
+observer.observe(target);
+
+
+
+
+
 
 /* VARIABILI */
 

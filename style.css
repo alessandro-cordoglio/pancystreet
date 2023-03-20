@@ -244,19 +244,33 @@ header{
 }
 .opere_section_content{
   background-color: #F27506;
+  padding-bottom: 500px;
+  border-bottom: 2px solid black;
 }
-.bar{
+.bar {
   background-color: #F27506;
-  padding-top: 150px;
+  height: 0; /* Altezza iniziale a 0 */
+  transition: 0.5s ;
 }
-.bar_1{
-  margin-top: 80px;
+
+.bar_2 {
+  height: 200px;
+  transform: translateY(400px); /* Muovi l'elemento verso l'alto di 300px (altezza totale meno l'altezza desiderata) */
 }
-.bar_2{
-  margin-top: 300px;
+
+.bar_1 {
+  height: 200px;
+  transform: translateY(200px); /* Muovi l'elemento verso l'alto di 200px */
 }
-.bar_4{
-  margin-top: 150px ;
+
+.bar_4 {
+  height: 200px;
+  transform: translateY(300px); /* Muovi l'elemento verso l'alto di 100px */
+}
+
+.bar_3 {
+  height: 400px;
+  transform: translateY(0); /* Non è necessario muovere l'elemento, quindi la trasformazione è pari a 0 */
 }
 
 .opere_first img{
@@ -287,6 +301,17 @@ header{
 }
 .button_img_three{
   left: 500px; top: 100px;
+}
+.grifo_img{
+  left: 800px; top: 980px;
+  object-fit: cover;
+  width: 900px;
+  height: 580px;
+
+}
+.grifo_img img{
+  width: 100%;
+  height: 100%;
 }
 
 
