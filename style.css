@@ -329,6 +329,7 @@ header{
 .arrow_section_title{
   background-color: #F2BC1B;
   padding-top: 200px;
+  padding-bottom: 130px;
 }
 .arrow_title h2{
   text-align: center;
@@ -341,7 +342,7 @@ header{
 }
 
 .arrows_wrapper{
-  bottom: 450px; left: 500px;
+  bottom: 600px; left: 500px;
 }
 .arrow_preview{
   border-radius: 50%;
@@ -361,6 +362,50 @@ header{
 .thumb{
   border: 15px solid #582AC0 ;
 }
+
+/* FREE ART SECTION */
+
+.freeart_bar{
+  background-color: #F2BC1B;
+  height: auto;
+}
+.freeart_bar_wrapper{
+  height: 400px;
+}
+.fa_bar_1{
+  height: 400px;
+}
+.fa_bar_2{
+  height: 200px;
+}
+.fa_bar_3{
+  height: 100px;
+}
+.fa_bar_4{
+  height: 300px;
+}
+.freeart_left{
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+.freeart_right{
+  border-bottom: 2px solid black;
+}
+.freeart_title h2{
+  font-size: 200px;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px 0 30px 0 ;
+}
+.free{
+  padding-left: 400px !important;
+  color: #582AC0;
+}
+.art{
+  padding-right: 400px !important ;
+  color: #F27405;
+}
+
 
 
 /* MEDIA QUERIES */
