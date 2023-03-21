@@ -444,8 +444,51 @@ header{
 }
 .uomo{
   width: 400px;
-  top: 1050px; left: 1100px;
+  top: 1080px; left: 1000px;
 }
+.freeart_video_container{
+  width: 100%;
+  z-index: -999;
+  top: 900px;
+}
+.fr_slider{
+  width: 600px;
+  border-radius: 300px 300px 0 0 ;
+  overflow: hidden;
+  left: 35%;
+}
+.fr_slider img{
+  width: 100%;
+}
+
+.btn_slider{
+  border: 3px solid black;
+  width: 300px;
+  height: 710px;
+  padding: 20px;
+  left: 300px;
+  top: 2000px;
+  border-radius: 100% 0 0 0px;
+}
+.btn_next{
+  transform:  rotateY(180deg);
+  left: 1330px;
+}
+.mini_circle{
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  border-radius: 20px ;
+  background-color: white;
+  border: 2px solid white;
+}
+.thumb_active{
+  left: 900px;
+  top: 20px;
+  width: fit-content;
+}
+
+
 
 
 
