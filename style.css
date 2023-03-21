@@ -173,7 +173,7 @@ header{
 /* INTRO SECTION */
 
 .fancy{
-  color: #F27506;
+  color: #F27506 !important;
 }
 .ms_container{
   max-width: 800px;
@@ -364,7 +364,9 @@ header{
 }
 
 /* FREE ART SECTION */
-
+.freeart_section{
+  padding-bottom: 76px;
+}
 .freeart_bar{
   background-color: #F2BC1B;
   height: auto;
@@ -487,6 +489,54 @@ header{
   top: 20px;
   width: fit-content;
 }
+
+
+/* ENDING SECTION */
+.ending_content{
+  background-color: #582AC0;
+  padding-top: 100px ;
+  padding-bottom: 160px;
+  border-bottom: 2px solid black;
+}
+.ending_content h5{
+  color: #F1BC1A;
+  font-weight: bold;
+  font-size: 100px;
+  
+}
+.first_text{
+  text-align: right;
+  padding-right: 90px;
+}
+.second_text{
+  padding-left: 70px;
+}
+.ending_img{
+  width: 360px;
+  height: 260px;
+}
+.sculture_9{
+  top: 300px; left: 350px;
+}
+.ending_content img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.third_text{
+  padding-left: 100px;
+}
+.sculture_wrapper{
+  padding: 0 60px 0 60px;
+}
+.fourth_text {
+  transform: rotate(269deg);
+  font-size: 160px !important;
+}
+.fourth{
+  right: 220px; top: 200px;
+}
+
 
 
 
