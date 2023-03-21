@@ -247,7 +247,7 @@ header{
 .bar {
   background-color: #F27506;
   height: 0; /* Altezza iniziale a 0 */
-  transition: 0.5s ;
+  transition: 1s ;
 }
 
 .bar_2 {
@@ -404,6 +404,47 @@ header{
 .art{
   padding-right: 400px !important ;
   color: #F27405;
+}
+.freeart_content{
+  padding-top: 40px;
+}
+.text_content{
+  font-weight: bold;
+  padding: 0 100px 0 100px
+}
+.freeart_slider_container img{
+  width: 100%;
+  height: 100%;
+}
+.bimbo{
+  width: 400px;
+  left: 180px;top: 70px
+}
+.afro{
+  width: 400px;
+  left: 500px; top: 360px ;
+}
+.discorso{
+  width: 600px;
+  height: 700px;
+  left: 1000px; top: 100px;
+}
+.cat{
+  width: 700px;
+  height: 500px;
+  top: 600px; left: 600px;
+  
+}
+.cat img{
+  object-fit: cover;
+}
+.fabb{
+  width: 600px;
+  top: 700px; left: 200px;
+}
+.uomo{
+  width: 400px;
+  top: 1050px; left: 1100px;
 }
 
 
