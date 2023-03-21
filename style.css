@@ -315,6 +315,26 @@ header{
 }
 
 /* ARROW SECTION */
+.tag{
+  top: 250px;
+  width: 700px;
+  height: 150px;
+  background-color: #F2BC1B;
+  color: white;
+}
+.point{
+  top: 250px; left: 700px;
+  width: 0;
+  height: 0;
+  border-top: 75px solid transparent;
+  border-bottom: 75px solid transparent;
+  border-left: 75px solid #F2BC1B;
+}
+.tag div{
+  font-size: 30px ;
+  height: 100%;
+  padding: 30px 40px 40px 400px;
+}
 
 .arrow_main_img{
   width: 100%;
