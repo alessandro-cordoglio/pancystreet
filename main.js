@@ -77,6 +77,10 @@ window.addEventListener('scroll', () => {
   const mapText = $(".map_text");
   const mainImg = $('.arrow_main_img img');
   const previewImgs = $('.arrow_preview img');
+  const mainGarageImg= $('.garage_container img');
+  const circleBtn1= $('.button_img_one'); 
+  const circleBtn2= $('.button_img_two'); 
+  const circleBtn3= $('.button_img_three'); 
   const sliderImgs = [
     {
       image: 'assets/20230104_114822.jpg'
@@ -147,6 +151,19 @@ window.addEventListener('scroll', () => {
 
   };
 
+/* funzione onlcick x ""zoommare img sui cerchi"" */
+  $(circleBtn1).on('click', function(){
+    const garage1Img = 'assets/garage_web1.jpg';
+      $(mainGarageImg).attr('src', garage1Img)
+  })
 
-  
+  $(circleBtn2).on('click', function(){
+    const garage2Img = 'assets/garage_web3.jpg';
+      $(mainGarageImg).attr('src', garage2Img)
+  })
+
+  $(circleBtn3).on('click', function(){
+    const garage3Img = 'assets/garage_web2.jpg';
+      $(mainGarageImg).attr('src', garage3Img);
+  })
 });
