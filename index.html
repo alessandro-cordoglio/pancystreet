@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -115,17 +114,19 @@
                 </div>
                 <div class="map_container d-flex justify-content-end col-10">
                     <div class="map_text active">
-                        <span >lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem v loremloremloremloremloremlorem  lorem</span>
+                        <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione vel maiores, asperiores dolorum dolorem atque modi ad, recusandae laboriosam quibusdam commodi sed, possimus sapiente esse non fugit fuga fugiat?</span>
                     </div>
-                    <div class="map_image_container">
-                        <img src="assets/Senza_titolo-2_Tavola_disegno_1_copia.jpg" alt="map_1">
+                    <div class="map_image_container" >
+                        <a href="https://www.google.it/maps/place/Via+della+Viola,+06122+Perugia+PG/@43.11201,12.3901911,17z/data=!3m1!4b1!4m6!3m5!1s0x132ea07e0305b637:0xf82b60d4a5481cb3!8m2!3d43.1120061!4d12.3923798!16s%2Fg%2F119w8mrwk">
+                            <img src="assets/Senza_titolo-2_Tavola_disegno_1_copia.jpg" alt="map_1">
+                        </a>
                     </div>
                 </div>
                 <div class="absolute arrow_img_intro">
                     <img src="assets/freccia_web.jpg" alt="arrow">
                 </div>
                 <div class="absolute window_img_intro">
-                    <img src="assets/pixels_web.jpg" alt="window">
+                    <img  src="assets/pixels_web.jpg" alt="window">
                 </div>
                 <div>
                     <div class="fw-bold bidimensional_shape_title container relative">
@@ -146,17 +147,18 @@
                     <div class="opere_title">
                         <h1>OPERE</h1>
                     </div>
-                    <div class="d-flex opere_img_container container">
+                    <div class="d-flex opere_img_container container gx-2">
                         <div class="col-6 opere_first relative">
 
-                            <div class="absolute circle button_img_one">
+                            <div class="absolute circle button_img_one ">
                             </div>
                             <div class="absolute circle button_img_two">
                             </div>
                             <div class="absolute circle button_img_three">
                             </div>
-
-                            <img class="pb-4" src="assets/garage_web.jpg" alt="opere_garage">
+                            <div class="garage_container">
+                                <img class=" zoomable" src="assets/garage_web.jpg" alt="opere_garage">
+                            </div>
                             <span class="text-white">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere perspiciatis doloremque placeat quidem nulla nostrum, laudantium labore dolor, iusto architecto consectetur eos, dolore harum sed tempora exercitationem cumque dolorum.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere perspiciatis doloremque placeat quidem nulla nostrum, laudantium labore dolor, iusto architecto consectetur eos, dolore harum sed tempora exercitationem cumque dolorum.
@@ -164,11 +166,11 @@
                             </span>
                         </div>
                         <div class="col-6 opere_rat">
-                            <img src="assets/topo_web.jpg" alt="opere_rat">
+                            <img class="zoomable" onclick="zoomIn(this)" src="assets/topo_web.jpg" alt="opere_rat">
                         </div>
                     </div>
-                    <div class="absolute grifo_img">
-                        <img src="assets/grifo_web.jpg" alt="grifo">
+                    <div class="absolute grifo_img overflow-hidden">
+                        <img class="zoomable" onmouseleave="zoomIn(this)" onmouseenter="zoomIn(this)"  src="assets/grifo_web.jpg" alt="grifo">
                     </div>
                 </div>
             </section>
@@ -184,7 +186,7 @@
                             
                     </div>
                     <div class="arrow_main_img">
-                        <img src="assets/freccia1_web.jpg" alt="arrow1">
+                        <img class="img-fluid" src="assets/freccia1_web.jpg" alt="arrow1">
                     </div>
                 </div>
                 <div class="arrows_wrapper absolute d-flex">
@@ -352,7 +354,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex freeart_bar_wrapper">
+                    <div class="ed_bar ed_bar_1 col-3"></div>
+                    <div class="ed_bar ed_bar_2 col-3"></div>
+                    <div class="ed_bar ed_bar_3 col-3"></div>
+                    <div class="ed_bar ed_bar_4 col-3"></div>
+                </div>
             </section>
+            <section class="pre_footer_section py-5">
+                <div>
+                    <h2>
+                        COMUNICARE
+                    </h2>
+                </div>
+                <div>
+                    <h2>
+                        ATTRAVERSO
+                    </h2>
+                </div>
+                <div>
+                    <h2>
+                        GLI OCCHI
+                    </h2>
+                </div>
+            </section>
+
         </main>
 
     <footer>

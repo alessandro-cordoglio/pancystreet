@@ -48,15 +48,22 @@ $(document).ready(function(){
   ];
   let active = 0;
 
+
   /* __________FUNZIONI___________ */
 
+  
   previewImgs.each(function(index) {
-  $(this).on('click', function() {
-  // otteniamo l'URL dell'immagine cliccata
-  const newImgUrl = $(this).attr('src');
-  // sostituiamo l'immagine principale con quella cliccata
-  mainImg.attr('src', newImgUrl);
-  });
+    $(this).on('click', function() {
+      active=index;
+      // otteniamo l'URL dell'immagine cliccata
+      const newImgUrl = $(this).attr('src');
+      // sostituiamo l'immagine principale con quella cliccata
+      mainImg.attr('src', newImgUrl);
+      if (active===index) {
+        previewImgs.removeClass('pr_border');
+        $(this).addClass('pr_border');
+      }
+    });
   });
 
   /* funzione on hover x cambiare immagine e far apparire testo */
@@ -75,13 +82,19 @@ $(document).ready(function(){
     const nav = $('.ms_nav');
     nav.toggleClass('active');
     nav.toggleClass('slide-down');
-  }
+  };
   
   window.startVideo = function() {
     $('#video').get(0).play();
     $('.video_button').addClass('active');
-  }
+  };
 
+  
+  /* funzione x zoommare img */
+  window.zoomIn = function(img){
+    $(img).toggleClass("zoom_In");
+
+  };
 
 
   
