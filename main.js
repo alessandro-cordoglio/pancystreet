@@ -103,12 +103,10 @@ window.addEventListener('scroll', () => {
     }
   ]; */
 
-  var currentImg = 0;
-
-
-
+  var slideIndex = 0;
   let active = 0;
-
+  
+  showSlides(slideIndex);
 
   /* __________FUNZIONI___________ */
 
@@ -175,53 +173,44 @@ window.addEventListener('scroll', () => {
 
   /* ____________SLIDER____________ */
 
-   // Funzione per cambiare immagine
-  function changeImg(index){
-    // Nascondiamo tutte le immagini
-    $('.fr_slider img').addClass('d-none');
-    // Mostrando solo l'immagine corrispondente all'indice
-    $('.fr_slider img').eq(index).removeClass('d-none');
-    // Settiamo l'indice corrente
-    currentImg = index;
-    // Aggiungiamo la classe 'now' al mini cerchio corrispondente
-    $('.mini_circle').removeClass('now');
-    $('.mini_circle').eq(index).addClass('now');
+  function showSlides(n) {
+    var i;
+    var slides = $(".slider-img");
+    var dots = $(".mini_circle");
+
+    // resetto le classi d-none per le immagini
+    slides.addClass("d-none");
+
+    // rimuovo la classe "now" dai cerchi e il background-color trasparente
+    dots.removeClass("now").css("background-color", "white");
+
+    // controllo l'indice corrente della slide
+    if (n >= slides.length) {
+      slideIndex = 0;
+    } else if (n < 0) {
+      slideIndex = slides.length - 1;
+    } else {
+      slideIndex = n;
+    }
+
+    // visualizzo la slide corrente e imposto la classe "now" sul mini cerchio corrispondente
+    $(slides[slideIndex]).removeClass("d-none");
+    $(dots[slideIndex]).addClass("now").css("background-color", "transparent");
   }
-  
-  // Click sul bottone "Next"
-  $('.btn_next').click(function(){
-    // Incrementiamo l'indice
-    currentImg++;
-    // Se l'indice supera il numero di immagini, lo riportiamo a 0
-    if(currentImg >= $('.fr_slider img').length){
-      currentImg = 0;
+
+  // gestione dei click sui pulsanti di scorrimento
+  $(".btn_slider").click(function() {
+    if ($(this).hasClass("btn_prev")) {
+      showSlides(slideIndex - 1);
+    } else if ($(this).hasClass("btn_next")) {
+      showSlides(slideIndex + 1);
     }
-    // Cambiamo l'immagine
-    changeImg(currentImg);
   });
-  
-  // Click sul bottone "Prev"
-  $('.btn_prev').click(function(){
-    // Decrementiamo l'indice
-    currentImg--;
-    // Se l'indice diventa negativo, lo riportiamo all'ultima immagine
-    if(currentImg < 0){
-      currentImg = $('.fr_slider img').length - 1;
-    }
-    // Cambiamo l'immagine
-    changeImg(currentImg);
-  });
-  
-  // Click sui mini cerchi
-  $('.mini_circle').click(function(){
-    // Otteniamo l'indice del mini cerchio cliccato
-    var index = $(this).data('index');
-    // Cambiamo l'immagine
-    changeImg(index);
-    // Rimuoviamo la classe d-none solo dall'immagine corrente
-    $('.fr_slider img').eq(currentImg).removeClass('d-none');
-    // Aggiungiamo la classe d-none alle altre immagini
-    $('.fr_slider img').not(':eq(' + currentImg + ')').addClass('d-none');
+
+  // gestione dei click sui mini cerchi
+  $(".mini_circle").click(function() {
+    var dotIndex = $(this).data("index");
+    showSlides(dotIndex);
   });
  
 });
