@@ -34,13 +34,25 @@
                         </div>
                         <ul class="ms_nav fw-bold active">
                             <div class="nav_li">
-                                <li class="arrow_nav">FRECCE</li>
+                                <li class="arrow_nav">
+                                    <a  href="#arrow_section">
+                                        FRECCE
+                                    </a> 
+                                </li>
                             </div>
                             <div class="nav_li">
-                                <li class="nav_element">FREE ART</li>
+                                <li class="nav_element">
+                                    <a  href="#freeart_section">
+                                        FREE ART
+                                    </a> 
+                                </li>
                             </div>
                             <div class="nav_li">
-                                <li class="nav_element">STRUTTURE<li>
+                                <li class="nav_element">
+                                    <a  href="#sculture_section">
+                                        SCULTURE
+                                    </a> 
+                                <li>
                             </div>
                         </ul>
                     </div>
@@ -52,7 +64,7 @@
             <section class="ms_hero">
                 <div class="hero_container">
                     <div class="absolute video_container">
-                        <video class="video_style" id='video'>
+                        <video class="video_style" id='video_hero'>
                             <source src="assets/Composizione_1_1.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -175,7 +187,7 @@
                 </div>
             </section>
 
-            <section class="arrow_section relative">
+            <section id="arrow_section" class="arrow_section relative">
                 <div class="arrow_wrapper relative">
                     <div class="absolute tag">
                         <div>
@@ -219,7 +231,7 @@
                     </div>
                 </div>
             </section>
-            <section class="freeart_section">
+            <section id="freeart_section" class="freeart_section">
                 <div  class="freeart_title d-flex">
                     <div class="freeart_left col-6">
                         <div class="freeart_bar_wrapper d-flex justify-content-between">
@@ -267,29 +279,35 @@
                             <img src="assets/uomo_web.jpg" alt="uomo">
                         </div>
                         
-                            <video class="relative freeart_video_container" id='video' loop autoplay>
+                            <video class="relative freeart_video_container" id='video' preload muted playsinline loop autoplay>
                                 <source src="assets/Composizione_1.mp4" type="video/mp4">
                             </video>
-                            
-                            <div class="btn_prev btn_slider absolute">
-                            </div>
-                            <div class="btn_next btn_slider absolute">
-                            </div>
-                            <div class="fr_slider relative">
-                                <img class="" src="assets/20230104_114822.jpg" alt="">
-                            </div>
-                            <div class="thumb_active d-flex relative">
-                                <div class="mini_circle"></div>
-                                <div class="mini_circle"></div>
-                                <div class="mini_circle"></div>
-                                <div class="mini_circle"></div>
-                                <div class="mini_circle"></div>
-                                <div class="mini_circle"></div>
+                            <div class="slider">
+                                <div class="btn_prev btn_slider absolute">
+                                </div>
+                                <div class="btn_next btn_slider absolute">
+                                </div>
+                                <div class="fr_slider relative d-flex">
+                                    <img class="slider-img" src="assets/20230104_114822.jpg" alt="">
+                                    <img class="slider-img d-none" src="assets/20230104_115140.jpg" alt="">
+                                    <img class="slider-img d-none" src="assets/20230104_115451.jpg" alt="">
+                                    <img class="slider-img d-none" src="assets/20230104_115559.jpg" alt="">
+                                    <img class="slider-img d-none" src="assets/20230104_115620.jpg" alt="">
+                                    <img class="slider-img d-none" src="assets/20230104_115813.jpg" alt="">
+                                </div>
+                                <div class="thumb_active d-flex relative">
+                                    <div class="mini_circle now" data-index="0" ></div>
+                                    <div class="mini_circle" data-index="1"></div>
+                                    <div class="mini_circle" data-index="2"></div>
+                                    <div class="mini_circle" data-index="3"></div>
+                                    <div class="mini_circle" data-index="4"></div>
+                                    <div class="mini_circle" data-index="5"></div>
+                                </div>
                             </div>
                     </div>
                 </div>
             </section>
-            <section class="ending_section">
+            <section id="sculture_section" class="ending_section">
                 <div class="ending_content relative">
                     <div class="container">
                         <div class="d-flex align-items-center">

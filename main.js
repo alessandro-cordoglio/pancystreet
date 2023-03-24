@@ -81,7 +81,8 @@ window.addEventListener('scroll', () => {
   const circleBtn1= $('.button_img_one'); 
   const circleBtn2= $('.button_img_two'); 
   const circleBtn3= $('.button_img_three'); 
-  const sliderImgs = [
+
+  /* const sliderImgs = [
     {
       image: 'assets/20230104_114822.jpg'
     },
@@ -89,18 +90,23 @@ window.addEventListener('scroll', () => {
       image: 'assets/20230104_115140.jpg'
     },
     {
-      image: 'assets/20230104_115140.jpg'
+      image: 'assets/20230104_115451.jpg'
     },
     {
-      image: 'assets/20230104_115140.jpg'
+      image: 'assets/20230104_115559.jpg'
     },
     {
-      image: 'assets/20230104_115140.jpg'
+      image: 'assets/20230104_115620.jpg'
     },
     {
-      image: 'assets/20230104_115140.jpg'
+      image: 'assets/20230104_115813.jpg'
     }
-  ];
+  ]; */
+
+  var currentImg = 0;
+
+
+
   let active = 0;
 
 
@@ -151,7 +157,7 @@ window.addEventListener('scroll', () => {
 
   };
 
-/* funzione onlcick x ""zoommare img sui cerchi"" */
+/* fake zoom sui cerchi */
   $(circleBtn1).on('click', function(){
     const garage1Img = 'assets/garage_web1.jpg';
       $(mainGarageImg).attr('src', garage1Img)
@@ -166,4 +172,56 @@ window.addEventListener('scroll', () => {
     const garage3Img = 'assets/garage_web2.jpg';
       $(mainGarageImg).attr('src', garage3Img);
   })
+
+  /* ____________SLIDER____________ */
+
+   // Funzione per cambiare immagine
+  function changeImg(index){
+    // Nascondiamo tutte le immagini
+    $('.fr_slider img').addClass('d-none');
+    // Mostrando solo l'immagine corrispondente all'indice
+    $('.fr_slider img').eq(index).removeClass('d-none');
+    // Settiamo l'indice corrente
+    currentImg = index;
+    // Aggiungiamo la classe 'now' al mini cerchio corrispondente
+    $('.mini_circle').removeClass('now');
+    $('.mini_circle').eq(index).addClass('now');
+  }
+  
+  // Click sul bottone "Next"
+  $('.btn_next').click(function(){
+    // Incrementiamo l'indice
+    currentImg++;
+    // Se l'indice supera il numero di immagini, lo riportiamo a 0
+    if(currentImg >= $('.fr_slider img').length){
+      currentImg = 0;
+    }
+    // Cambiamo l'immagine
+    changeImg(currentImg);
+  });
+  
+  // Click sul bottone "Prev"
+  $('.btn_prev').click(function(){
+    // Decrementiamo l'indice
+    currentImg--;
+    // Se l'indice diventa negativo, lo riportiamo all'ultima immagine
+    if(currentImg < 0){
+      currentImg = $('.fr_slider img').length - 1;
+    }
+    // Cambiamo l'immagine
+    changeImg(currentImg);
+  });
+  
+  // Click sui mini cerchi
+  $('.mini_circle').click(function(){
+    // Otteniamo l'indice del mini cerchio cliccato
+    var index = $(this).data('index');
+    // Cambiamo l'immagine
+    changeImg(index);
+    // Rimuoviamo la classe d-none solo dall'immagine corrente
+    $('.fr_slider img').eq(currentImg).removeClass('d-none');
+    // Aggiungiamo la classe d-none alle altre immagini
+    $('.fr_slider img').not(':eq(' + currentImg + ')').addClass('d-none');
+  });
+ 
 });
