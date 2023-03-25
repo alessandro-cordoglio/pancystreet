@@ -1,4 +1,15 @@
 /* COMMON */
+
+/* breakpoints:
+    -1600px
+    -996px
+    -626px
+    -480px
+    -375px
+ */
+
+
+
 a{
   color: inherit;
   text-decoration: none;
@@ -37,7 +48,7 @@ header{
     height: 100%;
   }
   .header_middle{
-    width: 37%;
+    max-width: 37%;
     padding: .9375rem;
   }
   .header_left{
@@ -541,7 +552,41 @@ header{
   top: 1.25rem;
   width: fit-content;
 }
+.discorso_text{
+  width: 100%;
+  padding-right: 200px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.discorso_text h5{
+  color: #F27405;
+  font-weight: bold;
+  word-wrap: break-word;
+  font-size: 150px;
 
+}
+.discorso:hover .discorso_text{
+  display: block !important;
+}
+.fabb_text{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(149, 12, 190, 0.5);
+}
+.fabb_text h5{
+  font-size: 150px;
+  color: #F2BC1B;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  left: 600px;
+}
+.fabb:hover .fabb_text{
+  display: block !important;
+} 
+.bimbo_text{
+  max-width: 350px ;
+  left: 600px;top: 100px;
+}
 
 /* ENDING SECTION */
 .ending_content{
@@ -633,6 +678,9 @@ header{
   padding-bottom: 31.25rem;
 }
 
+
+
+
 /* _________________FOOTER____________ */
 .footer_content{
   border-top: 2px solid black;
@@ -666,12 +714,12 @@ header{
 
 /* MEDIA QUERIES */
   /* media query */
-  @media screen and (max-width: 1180px) {
+  @media screen and (max-width: 1600px) {
     .nav_li:nth-child(2){
       margin: 0rem 1.25rem 0 1.25rem;
     }
   }
-  @media screen and (max-width: 62.25rem){
+  @media screen and (max-width: 996px){
     .ham_menu{
         text-align: right;
         padding-right: 1.25rem;

@@ -171,10 +171,32 @@ window.addEventListener('scroll', () => {
       $(mainGarageImg).attr('src', garage3Img);
   })
 
+
+/* funzione x bimbo text */
+  $('.bimbo').mouseover(function () { 
+    $('.bimbo_text').text('Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates rerum velit consequatur nihil voluptatem sit alias error doloribus, odio minima voluptatibus, dolorum quos nemo magni expedita. Pariatur, id quo? ')
+  });
+  $('.bimbo').mouseout(function () { 
+    $('.bimbo_text').text('')
+  });  
+
+/* funzione x sculture section */
+
+  $('.first_row').mouseover(function () { 
+    $('.fourth_text').text('MASCHERE')
+  });
+  $('.second_row').mouseover(function () { 
+    $('.fourth_text').text('SCULTURA')
+  });
+  $('.third_row').mouseover(function () { 
+    $('.fourth_text').text('DETTAGLIO')
+  });
+
+
+
   /* ____________SLIDER____________ */
 
   function showSlides(n) {
-    var i;
     var slides = $(".slider-img");
     var dots = $(".mini_circle");
 
